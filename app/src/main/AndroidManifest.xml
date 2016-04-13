@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.mymusicplay" >
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+            <activity
+                android:label="@string/app_name"
+                android:name="com.example.administrator.mymusicplay.cn.com.karl.music.MainActivity" >
+                <intent-filter >
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name="com.example.administrator.mymusicplay.cn.com.karl.music.SongsActivity"></activity>
+            <activity android:name="com.example.administrator.mymusicplay.cn.com.karl.music.ArtistsActivity"></activity>
+            <activity android:name="com.example.administrator.mymusicplay.cn.com.karl.music.ListActivity"></activity>
+            <activity android:name="com.example.administrator.mymusicplay.cn.com.karl.music.AlbumsActivity"></activity>
+            <activity android:name="com.example.administrator.mymusicplay.cn.com.karl.music.MusicActivity"></activity>
+            <service  android:name="com.example.administrator.mymusicplay.cn.com.karl.music.MusicService"></service>
+        </application>
+
+
+</manifest>
